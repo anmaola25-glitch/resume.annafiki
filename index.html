@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ana Fiki Hidayatul Maula — Resume</title>
+  <meta name="description" content="Resume Ana Fiki Hidayatul Maula — Mahasiswi UNIVERSITAS KOMPUTAMA, Sistem Informasi, Angkatan 2023." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografi: Poppins untuk judul, Inter untuk body -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Beranda Ana Fiki">AF</a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero container reveal" id="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Ana Fiki Hidayatul Maula</h1>
+        <p class="subtitle">Mahasiswi UNIVERSITAS KOMPUTAMA — Sistem Informasi, Angkatan 2023</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="assets/pdf/CV_Ana_Fiki_Hidayatul_Maula.pdf" download aria-label="Download CV Ana Fiki">Download CV</a>
+          <a class="btn outline" href="#contact">Hubungi</a>
+        </div>
+      </div>
+      <div class="hero-photo" aria-hidden="false">
+        <img src="assets/images/profile.webp" alt="Foto Ana Fiki Hidayatul Maula" loading="lazy">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container reveal" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p class="lead">Halo, saya Ana Fiki Hidayatul Maula — saat ini menempuh studi Sistem Informasi di UNIVERSITAS KOMPUTAMA (Angkatan 2023). Saya tertarik pada pengembangan web, UX, dan data-driven solutions. Saya senang mengerjakan proyek yang fokus pada pengalaman pengguna dan performa.</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section container reveal" aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+      <div class="card">
+        <h3>UNIVERSITAS KOMPUTAMA</h3>
+        <p>Jurusan Sistem Informasi — Angkatan 2023</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container reveal" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head">
+            <span>HTML & CSS</span><span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar" data-value="90" aria-hidden="true"><span class="fill" style="width:0%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head">
+            <span>JavaScript</span><span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar" data-value="75"><span class="fill" style="width:0%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head">
+            <span>UI/UX</span><span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-bar" data-value="70"><span class="fill" style="width:0%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container reveal" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0">
+          <img src="assets/images/project-1.webp" alt="Thumbnail project 1" loading="lazy">
+          <div class="project-body">
+            <h3>Project Title 1</h3>
+            <p class="muted">Short summary of the project with tech tags.</p>
+            <div class="project-actions">
+              <a class="btn small" href="#">Lihat detail</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" tabindex="0">
+          <img src="assets/images/project-2.webp" alt="Thumbnail project 2" loading="lazy">
+          <div class="project-body">
+            <h3>Project Title 2</h3>
+            <p class="muted">Short summary of the project with tech tags.</p>
+            <div class="project-actions">
+              <a class="btn small" href="#">Lihat detail</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container reveal" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" aria-label="Contact form">
+          <label for="name">Nama</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <!-- Ganti action ke Formspree/EmailJS endpoint bila ingin terhubung -->
+          <button class="btn primary" type="submit">Kirim</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-info" aria-label="Informasi kontak">
+          <h3>Temui saya</h3>
+          <p>Email: <a href="mailto:ana@example.com">ana@example.com</a></p>
+          <p>LinkedIn: <a href="#" rel="noopener">linkedin.com/in/ana</a></p>
+          <p>GitHub: <a href="#" rel="noopener">github.com/ana</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ana Fiki Hidayatul Maula — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js" defer></script>
+</body>
+</html>
