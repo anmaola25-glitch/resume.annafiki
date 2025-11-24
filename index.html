@@ -3,409 +3,151 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anafiki Hidayatul Maula — Portfolio</title>
-  <meta name="description" content="Portfolio Anafiki Hidayatul Maula — Fotografer, Videografer, Marketing, UI/UX Designer, dan Pengembang Web. Mahasiswi UNIVERSITAS KOMPUTAMA, Sistem Informasi (2023)." />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/a">
+  <title>Ana Fiki Hidayatul Maula — Resume</title>
+  <meta name="description" content="Resume Ana Fiki Hidayatul Maula — Mahasiswi UNIVERSITAS KOMPUTAMA, Sistem Informasi, Angkatan 2023." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografi: Poppins untuk judul, Inter untuk body -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/icons/favicon.svg" />
 </head>
-<body class="theme-dark">
-
-  <!-- NAV -->
-  <header class="nav-wrap">
-    <nav class="container nav" aria-label="Main navigation">
-      <a class="brand" href="#hero">
-        <span class="brand-mark" aria-hidden="true">AHM</span>
-        <span class="brand-name">Anafiki</span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menu
-        <span class="hamburger"><span></span><span></span><span></span></span>
-      </button>
-      <ul class="nav-list" id="navList">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Beranda Ana Fiki">AF</a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-inner">
-      <div class="hero-left reveal-hero">
-        <div class="profile-wrap">
-          <!-- Ganti src dengan foto Anda -->
-          <img class="profile-photo" id="profilePhoto" src="img/a" alt="Foto Anafiki Hidayatul Maula">
-        </div>
-
-        <!-- Personal mini card (di bawah foto) -->
-        <div class="profile-mini reveal">
-          <div class="mini-header">
-            <div>
-              <h3 id="miniName">Anafiki Hidayatul Maula</h3>
-              <p class="muted" id="miniRole">Mahasiswi SISTEM INFORMASI — UNIVERSITAS KOMPUTAMA</p>
-            </div>
-            <div class="mini-actions-inline">
-              <button class="btn btn-ghost small" id="openProfileBtn" aria-haspopup="dialog">Selengkapnya</button>
-            </div>
-          </div>
-
-          <ul class="personal-list">
-            <li><strong>Tempat, Tgl Lahir:</strong> <span id="Cilacap, 19 Desember 2005">-</span></li>
-            <li><strong>Umur:</strong> <span id="age">19</span></li>
-            <li><strong>Hobi:</strong> <span id="hobbies">Fotografi, Videografi</span></li>
-            <li><strong>Motto:</strong> <span id="motto">"Kreativitas dimulai dari rasa ingin tahu"</span></li>
-          </ul>
-
-          <div class="mini-cta">
-            <button class="btn btn-primary" id="bookingBtn">Booking / Kolaborasi</button>
-            <button class="btn btn-ghost" id="lihatKaryaBtn">Lihat Karya</button>
-          </div>
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero container reveal" id="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Ana Fiki Hidayatul Maula</h1>
+        <p class="subtitle">Mahasiswi UNIVERSITAS KOMPUTAMA — Sistem Informasi, Angkatan 2023</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="assets/pdf/CV_Ana_Fiki_Hidayatul_Maula.pdf" download aria-label="Download CV Ana Fiki">Download CV</a>
+          <a class="btn outline" href="#contact">Hubungi</a>
         </div>
       </div>
-
-      <div class="hero-right reveal-hero">
-        <div class="hero-card">
-          <div class="hero-stats">
-            <div>
-              <div class="stat-value">Fotografi</div>
-              <div class="stat-label">Pengalaman sesi & event</div>
-            </div>
-            <div>
-              <div class="stat-value">UI/UX</div>
-              <div class="stat-label">Desain & riset pengguna</div>
-            </div>
-            <div>
-              <div class="stat-value">Web Dev</div>
-              <div class="stat-label">Front-end & dasar back-end</div>
-            </div>
-          </div>
-          <p class="hero-desc">Saya menggabungkan estetika visual, desain pengalaman pengguna, dan kemampuan pengembangan web untuk menghasilkan produk digital dan konten yang berdampak. Selamat datang di portofolio saya.</p>
-          <div class="socials">
-            <a href="#" aria-label="Instagram" class="social">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.2"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.2"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
-            </a>
-            <a href="#" aria-label="YouTube" class="social">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 7.2s-.2-1.6-.8-2.3c-.7-.9-1.5-.9-1.9-1C16.2 3.5 12 3.5 12 3.5h0s-4.2 0-7.3.4c-.4 0-1.2.1-1.9 1C2.2 5.6 2 7.2 2 7.2S2 9 2 10.8v2.4C2 17 3 18.8 3 18.8s.7 1.2 1.8 1.6c1.3.5 5.5.5 5.5.5s4.2 0 7.3-.4c.4 0 1.2-.1 1.9-1 0 0 1-1.8 1-3.6V10.8c0-1.8-.2-3.6-.2-3.6z" stroke="currentColor" stroke-width="0.8" fill="currentColor"/></svg>
-            </a>
-            <a href="#" aria-label="LinkedIn" class="social">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9H3v12h3V9zM4.5 6.7A1.7 1.7 0 1 1 4.5 3.3a1.7 1.7 0 0 1 0 3.4zM21 21h-3v-5.6c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1.9V21h-3s.1-9.7 0-10.7h3V11c.4-.6 1.1-1.6 2.6-1.6 1.9 0 3.3 1.2 3.3 3.9V21z" stroke="currentColor" stroke-width="0.6" fill="currentColor"/></svg>
-            </a>
-          </div>
-        </div>
+      <div class="hero-photo" aria-hidden="false">
+        <img src="img/ana1912.jpg" alt="Foto Ana Fiki Hidayatul Maula" loading="lazy">
       </div>
-    </div>
+    </section>
 
-    <!-- decorative divider (wave) to bring hero & about visually closer -->
-    <div class="section-divider" aria-hidden="true">
-      <svg viewBox="0 0 1200 100" preserveAspectRatio="none" class="wave">
-        <defs>
-          <linearGradient id="g1" x1="0%" x2="100%" y1="0%" y2="0%">
-            <stop offset="0%" stop-color="rgba(255,77,166,0.12)"/>
-            <stop offset="100%" stop-color="rgba(255,133,192,0.06)"/>
-          </linearGradient>
-        </defs>
-        <path d="M0,40 C200,80 400,0 600,30 C800,60 1000,10 1200,40 L1200,100 L0,100 Z" fill="url(#g1)"></path>
-      </svg>
-    </div>
-  </section>
+    <!-- About -->
+    <section id="about" class="section container reveal" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p class="lead">Halo, saya Ana Fiki Hidayatul Maula — saat ini menempuh studi Sistem Informasi di UNIVERSITAS KOMPUTAMA (Angkatan 2023). Saya tertarik pada pengembangan web, UX, dan data-driven solutions. Saya senang mengerjakan proyek yang fokus pada pengalaman pengguna dan performa.</p>
+    </section>
 
-  <!-- ABOUT (more compact & accent background) -->
-  <section id="about" class="section about section--accent">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-sub">Sedikit tentang saya—latar belakang, pendekatan, dan nilai dalam bekerja.</p>
+    <!-- Education -->
+    <section id="education" class="section container reveal" aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+      <div class="card">
+        <h3>UNIVERSITAS KOMPUTAMA</h3>
+        <p>Jurusan Sistem Informasi — Angkatan 2023</p>
       </div>
+    </section>
 
-      <div class="about-grid">
-        <div class="about-card reveal">
-          <h3>Ringkasan</h3>
-          <p>Saya Anafiki, mahasiswi Sistem Informasi yang menggabungkan estetika visual, desain pengalaman pengguna (UI/UX), dan kemampuan pengembangan web untuk membuat konten dan produk digital yang estetis dan fungsional. Saya bekerja pada sesi foto, produksi video, desain antarmuka, riset pengalaman pengguna, serta front-end development sederhana.</p>
-        </div>
-
-        <div class="about-card reveal">
-          <h3>Nilai Kerja</h3>
-          <ul>
-            <li>Estetika & detail oriented</li>
-            <li>Kreativitas berbasis strategi</li>
-            <li>Pengalaman pengguna (UX) sebagai prioritas</li>
-            <li>Kolaborasi lintas disiplin (desain, konten, dev)</li>
-          </ul>
-        </div>
-
-        <div class="about-card reveal">
-          <h3>Pendidikan</h3>
-          <p>Mahasiswi <strong>UNIVERSITAS KOMPUTAMA</strong>, Jurusan Sistem Informasi, Angkatan 2023.</p>
-          <p>Aktif mengembangkan skill fotografi, videografi, desain UI/UX, dan pengembangan web.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS (alternate subtle background) -->
-  <section id="skills" class="section skills section--alt">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Skills</h2>
-        <p class="section-sub">Keahlian inti yang saya tawarkan.</p>
-      </div>
-
+    <!-- Skills -->
+    <section id="skills" class="section container reveal" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card reveal">
-          <h4>Fotografi</h4>
-          <p>Portrait, event, dan commercial photography. Editing menggunakan Lightroom & Photoshop.</p>
-          <div class="skill-meter"><span style="width:85%"></span></div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h4>Videografi</h4>
-          <p>Storytelling, short films, dan promo produk. Editing: Premiere Pro, After Effects (basic).</p>
-          <div class="skill-meter"><span style="width:80%"></span></div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h4>Marketing</h4>
-          <p>Content strategy, social media campaigns, branding dasar, dan analisis performa.</p>
-          <div class="skill-meter"><span style="width:75%"></span></div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h4>UI Design</h4>
-          <p>Desain antarmuka modern, style guide, prototyping di Figma atau Adobe XD.</p>
-          <div class="skill-meter"><span style="width:78%"></span></div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h4>UX Research</h4>
-          <p>Riset pengguna, user testing, dan iterasi berdasarkan insight pengguna.</p>
-          <div class="skill-meter"><span style="width:72%"></span></div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h4>Pengembang Web</h4>
-          <p>Front-end development (HTML, CSS, JavaScript) dan integrasi sederhana ke backend atau CMS.</p>
-          <div class="skill-meter"><span style="width:70%"></span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO (dark with subtle pattern) -->
-  <section id="portfolio" class="section portfolio section--pattern">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Portfolio</h2>
-        <p class="section-sub">Koleksi karya foto & video. Klik untuk melihat lebih jelas.</p>
-      </div>
-
-      <div class="portfolio-grid" id="portfolioGrid">
-        <!-- item 1: image -->
-        <figure class="port-item reveal" data-type="image" data-src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1bafc8a9b1f8f412b3d3b1a591e6f8df">
-          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1bafc8a9b1f8f412b3d3b1a591e6f8df" alt="Portfolio image 1">
-          <figcaption>
-            <h5>Street Portrait</h5>
-            <p>Fotografi portrait di lingkungan urban.</p>
-          </figcaption>
-        </figure>
-
-        <!-- item 2: image -->
-        <figure class="port-item reveal" data-type="image" data-src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=ad5aeb2b2bc8b6b7f14a3f2c0b8f8a7c">
-          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ad5aeb2b2bc8b6b7f14a3f2c0b8f8a7c" alt="Portfolio image 2">
-          <figcaption>
-            <h5>Event Coverage</h5>
-            <p>Dokumentasi acara dan moment candid.</p>
-          </figcaption>
-        </figure>
-
-        <!-- item 3: video -->
-        <figure class="port-item reveal" data-type="video" data-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
-          <video muted playsinline preload="metadata" poster="https://images.unsplash.com/photo-1527030280862-64139fba04ca?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=c3d6f6f6b5a9f7e9d6f1f0b0f3a5d1a1">
-            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
-          </video>
-          <figcaption>
-            <h5>Short Film Clip</h5>
-            <p>Cuplikan videografi pendek.</p>
-          </figcaption>
-        </figure>
-
-        <!-- item 4: image -->
-        <figure class="port-item reveal" data-type="image" data-src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=69efb1a9ea8a3f4c1a9f4e4c2b1d3a50">
-          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=69efb1a9ea8a3f4c1a9f4e4c2b1d3a50" alt="Portfolio image 4">
-          <figcaption>
-            <h5>Commercial Shot</h5>
-            <p>Fotografi produk dengan pencahayaan studio.</p>
-          </figcaption>
-        </figure>
-
-        <!-- item 5: image -->
-        <figure class="port-item reveal" data-type="image" data-src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a2a7b7a9c1b7f3b3f4f6c4d5a6b7c8d">
-          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a2a7b7a9c1b7f3b3f4f6c4d5a6b7c8d" alt="Portfolio image 5">
-          <figcaption>
-            <h5>Nature Portrait</h5>
-            <p>Sesi outdoor dengan tone lembut.</p>
-          </figcaption>
-        </figure>
-
-        <!-- item 6: video (another) -->
-        <figure class="port-item reveal" data-type="video" data-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
-          <video muted playsinline preload="metadata" poster="https://images.unsplash.com/photo-1508896694512-8f6c80c3c6f6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a0b0c0d0e0f1a2b3c4d5e6f7a8b9c0d">
-            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
-          </video>
-          <figcaption>
-            <h5>Promo Teaser</h5>
-            <p>Potongan video untuk kampanye promosi.</p>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" aria-hidden="true">
-      <button class="lb-close" id="lbClose" aria-label="Close lightbox">&times;</button>
-      <div class="lb-stage" id="lbStage" role="dialog" aria-modal="true"></div>
-    </div>
-  </section>
-
-  <!-- CONTACT (soft lighter overlay for contrast) -->
-  <section id="contact" class="section contact section--alt2">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-sub">Saya senang terhubung. Kirim pesan singkat dan saya akan merespons secepatnya.</p>
-      </div>
-
-      <div class="contact-grid">
-        <form id="contactForm" class="contact-form reveal" novalidate>
-          <label class="field">
-            <span>Nama</span>
-            <input type="text" name="name" id="name" placeholder="Nama lengkap" required>
-          </label>
-
-          <label class="field">
-            <span>Email</span>
-            <input type="email" name="email" id="email" placeholder="example@mail.com" required>
-          </label>
-
-          <label class="field">
-            <span>Pesan</span>
-            <textarea name="message" id="message" rows="6" placeholder="Tulis pesan singkat..." required></textarea>
-          </label>
-
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-            <div id="formStatus" class="form-status" aria-live="polite"></div>
+        <div class="skill">
+          <div class="skill-head">
+            <span>HTML & CSS</span><span class="skill-percent">90%</span>
           </div>
+          <div class="skill-bar" data-value="90" aria-hidden="true"><span class="fill" style="width:0%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head">
+            <span>JavaScript</span><span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar" data-value="75"><span class="fill" style="width:0%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head">
+            <span>UI/UX</span><span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-bar" data-value="70"><span class="fill" style="width:0%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container reveal" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0">
+          <img src="assets/images/project-1.webp" alt="Thumbnail project 1" loading="lazy">
+          <div class="project-body">
+            <h3>Project Title 1</h3>
+            <p class="muted">Short summary of the project with tech tags.</p>
+            <div class="project-actions">
+              <a class="btn small" href="#">Lihat detail</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" tabindex="0">
+          <img src="assets/images/project-2.webp" alt="Thumbnail project 2" loading="lazy">
+          <div class="project-body">
+            <h3>Project Title 2</h3>
+            <p class="muted">Short summary of the project with tech tags.</p>
+            <div class="project-actions">
+              <a class="btn small" href="#">Lihat detail</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container reveal" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" aria-label="Contact form">
+          <label for="name">Nama</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <!-- Ganti action ke Formspree/EmailJS endpoint bila ingin terhubung -->
+          <button class="btn primary" type="submit">Kirim</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
         </form>
 
-        <div class="contact-info reveal">
-          <h3>Info Kontak</h3>
-          <p><strong>Email:</strong> <a href="mailto:anafiki@example.com">anafiki@example.com</a></p>
-          <p><strong>Instagram:</strong> <a href="#">@anafiki</a></p>
-          <p><strong>Lokasi:</strong> Indonesia</p>
-
-          <div class="mini-cta">
-            <p>Butuh kolaborasi atau ingin mem-booking sesi? Kirim pesan melalui form atau email langsung.</p>
-            <a href="#contact" class="btn btn-ghost">Kirim Pesan</a>
-          </div>
-        </div>
+        <aside class="contact-info" aria-label="Informasi kontak">
+          <h3>Temui saya</h3>
+          <p>Email: <a href="mailto:ana@example.com">ana@example.com</a></p>
+          <p>LinkedIn: <a href="#" rel="noopener">linkedin.com/in/ana</a></p>
+          <p>GitHub: <a href="#" rel="noopener">github.com/ana</a></p>
+        </aside>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Anafiki Hidayatul Maula — All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="#hero">Home</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ana Fiki Hidayatul Maula — All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Profile detail modal (full "halaman") -->
-  <div id="profileModal" class="profile-modal" aria-hidden="true" role="dialog" aria-modal="true">
-    <button class="pm-close" id="pmClose" aria-label="Tutup profil">&times;</button>
-    <div class="pm-content">
-      <div class="pm-left">
-        <img id="pmPhoto" src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f7efb5a9cc7a1f2d77b3b32b09b125d" alt="Foto profil Anafiki">
-        <div class="pm-basic">
-          <h2 id="pmName">Anafiki Hidayatul Maula</h2>
-          <p class="muted" id="pmRole">Mahasiswi SISTEM INFORMASI — UNIVERSITAS KOMPUTAMA</p>
-          <ul class="pm-list">
-            <li><strong>Tempat, Tgl Lahir:</strong> <span id="pmBirthPlace">-</span></li>
-            <li><strong>Umur:</strong> <span id="pmAge">-</span></li>
-            <li><strong>Hobi:</strong> <span id="pmHobbies">-</span></li>
-            <li><strong>Motto:</strong> <span id="pmMotto">-</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pm-right">
-        <h3>Lebih tentang saya</h3>
-        <p>Saya senang mengeksplorasi kombinasi visual dan pengalaman pengguna yang berarti. Dalam pekerjaan saya, saya berfokus pada storytelling melalui gambar dan video, serta membangun antarmuka yang intuitif dan estetis.</p>
-
-        <div class="pm-cards">
-          <div class="pm-card">
-            <div class="pm-emoji">📸</div>
-            <div>
-              <h4>Fotografi</h4>
-              <p>Sesi portrait, event, dan komersial.</p>
-            </div>
-          </div>
-
-          <div class="pm-card">
-            <div class="pm-emoji">🎞️</div>
-            <div>
-              <h4>Videografi</h4>
-              <p>Short film, teaser, dan editing.</p>
-            </div>
-          </div>
-
-          <div class="pm-card">
-            <div class="pm-emoji">🖥️</div>
-            <div>
-              <h4>Web & UI/UX</h4>
-              <p>Desain & front-end development.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pm-actions">
-          <a href="#portfolio" class="btn btn-primary">Lihat Karya</a>
-          <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact Modal (Booking) -->
-  <div id="contactModal" class="profile-modal contact-modal" aria-hidden="true" role="dialog" aria-modal="true">
-    <button class="pm-close" id="contactModalClose" aria-label="Tutup kontak">&times;</button>
-    <div class="pm-content small">
-      <div style="flex:1">
-        <h3>Booking / Kolaborasi</h3>
-        <p class="muted">Isi form berikut untuk booking sesi atau diskusi kolaborasi. (Simulasi)</p>
-        <form id="contactModalForm" class="contact-form-modal" novalidate>
-          <label class="field"><span>Nama</span><input type="text" id="m_name" placeholder="Nama lengkap" required></label>
-          <label class="field"><span>Email</span><input type="email" id="m_email" placeholder="example@mail.com" required></label>
-          <label class="field"><span>Pesan / Request singkat</span><textarea id="m_message" rows="4" placeholder="Detail atau tanggal yang diinginkan..." required></textarea></label>
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Kirim Booking</button>
-            <div id="modalFormStatus" class="form-status" aria-live="polite"></div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js" defer></script>
 </body>
 </html>
